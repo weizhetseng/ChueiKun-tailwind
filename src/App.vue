@@ -1,5 +1,6 @@
 <template>
   <btn_header />
+  <RouterView />
   <btn_footer />
 </template>
 
