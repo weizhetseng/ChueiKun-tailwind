@@ -1,23 +1,28 @@
 <template>
     <footer class="bg-Mred">
-        <RouterLink
-            class="block w-44 h-16 bg-logo2 bg-center bg-no-repeat bg-cover indent-[101%] whitespace-nowrap overflow-hidden"
-            to="/">垂坤食品有限公司</RouterLink>
-        <RouterLink class="text-white" :to="item.url" v-for="item in pageLink" :key="item.title">{{ item.title }}
-        </RouterLink>
-        <ul class="text-white">
-            <li>
-                <p>客服專線:</p>
-                <a href="tel:037-867840">037-867840</a>
-            </li>
-            <li>
-                <p>客服時間:</p>
-                <div>
-                    <p>周一至周五08:00~21:00</p>
-                    <p>周六08:00~18:00</p>
-                </div>
-            </li>
-        </ul>
+        <div class="container flex items-baseline justify-evenly py-20 lg:flex-col lg:items-center lg:gap-5">
+            <RouterLink
+                class="block w-44 h-16 bg-logo2 bg-center bg-no-repeat bg-cover indent-[101%] whitespace-nowrap overflow-hidden"
+                to="/">垂坤食品有限公司</RouterLink>
+            <ul class="grid grid-cols-3 gap-4">
+                <li v-for="item in pageLink" :key="item.title">
+                    <RouterLink class=" text-white" :to="item.url">{{ item.title }}</RouterLink>
+                </li>
+            </ul>
+            <ul class="text-white">
+                <li class="flex">
+                    <p>客服專線:</p>
+                    <a href="tel:037-867840">037-867840</a>
+                </li>
+                <li class="flex">
+                    <p>客服時間:</p>
+                    <div>
+                        <p>周一至周五08:00~21:00</p>
+                        <p>周六08:00~18:00</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
         <p class="text-center bg-Myellow p-5 text-lg">垂坤食品有限公司 © 2022 All Rights Reserved.</p>
     </footer>
 </template>

@@ -13,9 +13,20 @@ const router = createRouter({
       path: '/about',
       name: 'about',
       component: () => import('../views/AboutUs.vue'),
-      meta:{
-        title:'關於垂坤',
+      meta: {
+        title: '關於垂坤',
         enTitle: 'ABOUT US',
+        breadcrumb: ['關於垂坤']
+      }
+    },
+    {
+      path: '/news',
+      name: 'news',
+      component: () => import('../views/NewsView.vue'),
+      meta: {
+        title: '最新消息',
+        enTitle: 'HOT NEWS',
+        breadcrumb: ['最新消息']
       }
     }
   ]

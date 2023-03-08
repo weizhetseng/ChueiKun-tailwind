@@ -3,20 +3,38 @@ module.exports = {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     container: {
-      padding: '2rem',
+      padding: '20px',
       center: true,
     },
     extend: {
       colors: {
         Mred: '#A02C2C',
         Myellow: '#F7EEDD',
-        gold: '#b4a27f'
+        gold: '#b4a27f',
+        gray: '#707070'
       },
       backgroundImage: {
         logo1: "url('/src/assets/image/logo/logo01.png')",
         logo2: "url('/src/assets/image/logo/logo02.png')",
-        bgword: "url('/src/assets/image/other/CHUEIKUN.png')"
+        bgword: "url('/src/assets/image/other/CHUEIKUN.png')",
+        bread: "url('/src/assets/image/other/bx-right-arrow-alt.png')",
+        right: "url('/src/assets/image/other/right.png')",
+        rightW: "url('/src/assets/image/other/right(white).png')",
+        down: "url('/src/assets/image/other/down.png')",
+      },
+      boxShadow: {
+        'mYellow': '2px 2px 0px 2px #F6EEDD',
+        'main': '0px 3px 6px rgba(0, 0, 0, 0.16)'
       }
+    },
+    screens: {
+      '3xl': { 'max': '1536px' },
+      '2xl': { 'max': '1200px' },
+      'xl': { 'max': '1024px' },
+      'lg': { 'max': '992px' },
+      'md': { 'max': '768px' },
+      'sm': { 'max': '576px' },
+      'xs': { 'max': '375px' },
     }
   },
   plugins: []
