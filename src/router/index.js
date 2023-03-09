@@ -28,6 +28,16 @@ const router = createRouter({
         enTitle: 'HOT NEWS',
         breadcrumb: ['最新消息']
       }
+    },
+    {
+      path: '/location',
+      name: 'location',
+      component: () => import('../views/Location.vue'),
+      meta: {
+        title: '營業據點',
+        enTitle: 'Business base',
+        breadcrumb: ['營業據點']
+      }
     }
   ]
 })

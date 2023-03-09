@@ -1,9 +1,12 @@
 <template>
     <footer class="bg-Mred">
-        <div class="container flex items-baseline justify-evenly py-20 lg:flex-col lg:items-center lg:gap-5">
+        <div
+            class="container flex flex-col items-center gap-5 py-10 lg:flex lg:flex-row lg:items-baseline lg:justify-evenly lg:py-20">
             <RouterLink
-                class="block w-44 h-16 bg-logo2 bg-center bg-no-repeat bg-cover indent-[101%] whitespace-nowrap overflow-hidden"
-                to="/">垂坤食品有限公司</RouterLink>
+                class=" block w-44 h-16 bg-logo2 bg-center bg-no-repeat bg-cover indent-[101%] whitespace-nowrap overflow-hidden"
+                to="/">
+                垂坤食品有限公司
+            </RouterLink>
             <ul class="grid grid-cols-3 gap-4">
                 <li v-for="item in pageLink" :key="item.title">
                     <RouterLink class=" text-white" :to="item.url">{{ item.title }}</RouterLink>

@@ -3,8 +3,14 @@ module.exports = {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     container: {
-      padding: '20px',
       center: true,
+      padding: '20px',
+    },
+    screens: {
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
     },
     extend: {
       colors: {
@@ -25,17 +31,8 @@ module.exports = {
       boxShadow: {
         'mYellow': '2px 2px 0px 2px #F6EEDD',
         'main': '0px 3px 6px rgba(0, 0, 0, 0.16)'
-      }
+      },
     },
-    screens: {
-      '3xl': { 'max': '1536px' },
-      '2xl': { 'max': '1200px' },
-      'xl': { 'max': '1024px' },
-      'lg': { 'max': '992px' },
-      'md': { 'max': '768px' },
-      'sm': { 'max': '576px' },
-      'xs': { 'max': '375px' },
-    }
   },
   plugins: []
 }

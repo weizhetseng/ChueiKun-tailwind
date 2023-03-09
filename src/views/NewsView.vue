@@ -5,11 +5,11 @@
             <btn_breadcrumb />
             <btn_pageTitle class="mb-9" />
             <div class="flex gap-5">
-                <ul class="w-3/4 lg:w-full mt-10 mb-16">
-                    <li class="flex gap-5 mb-10 items-center last:mb-0 lg:flex-col" v-for="item in newsList"
+                <ul class="lg:w-3/4 w-full mt-10 mb-16">
+                    <li class="flex flex-col gap-5 mb-10 items-center last:mb-0 lg:flex-row" v-for="item in newsList"
                         :key="item.title">
-                        <img class="w-1/2 lg:w-full" :src="imageUrl(item.imgUrl)" alt="">
-                        <div class="w-1/2 lg:w-full">
+                        <img class="lg:w-1/2 w-full" :src="imageUrl(item.imgUrl)" alt="">
+                        <div class="lg:w-1/2 w-full">
                             <p class="mb-5">{{ item.date }}</p>
                             <div class="flex gap-5 mb-4 items-center">
                                 <span
@@ -26,7 +26,7 @@
                         </div>
                     </li>
                 </ul>
-                <btn_newsList class="w-1/4 lg:hidden" />
+                <btn_newsList class="hidden w-1/4 lg:block xl:w-1/5" />
             </div>
             <btn_pagination class="mb-20" />
         </div>
