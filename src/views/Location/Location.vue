@@ -3,7 +3,10 @@
     <div class="bg-bgword bg-no-repeat bg-[center_top_-40px] pt-10">
         <div class="container">
             <btn_breadcrumb />
-            <btn_pageTitle class="mb-9" />
+            <div class="mb-9">
+                <h2 class="text-4xl text-Mred font-bold">營業據點</h2>
+                <p>Business base</p>
+            </div>
             <div class="w-full mx-auto mb-20 lg:w-4/5">
                 <div class="flex flex-col items-center gap-2 mb-5 lg:gap-14 lg:flex-row lg:mb-14">
                     <h3 class="text-2xl font-bold">全年無休，全台宅配</h3>
@@ -30,7 +33,7 @@
                                 <div class="flex items-center gap-1 lg:justify-center">
                                     <div
                                         class="w-7 h-7 border border-Mred rounded-full flex items-center justify-center shrink-0">
-                                        <img src="../assets/image/other/clock.png" alt="">
+                                        <img src="../../assets/image/other/clock.png" alt="">
                                     </div>
                                     {{ item.time }}
                                 </div>
@@ -40,7 +43,7 @@
                                 <div class="flex items-center gap-1 lg:justify-center">
                                     <div
                                         class="w-7 h-7 border border-Mred rounded-full flex items-center justify-center shrink-0">
-                                        <img src="../assets/image/other/location.png" alt="">
+                                        <img src="../../assets/image/other/location.png" alt="">
                                     </div>
                                     {{ item.address }}
                                 </div>
@@ -65,7 +68,6 @@
 
 <script setup>
 import btn_banner from '../../components/btn_banner.vue';
-import btn_pageTitle from '../../components/btn_pageTitle.vue';
 import btn_breadcrumb from '../../components/btn_breadcrumb.vue';
 
 const locationList = [

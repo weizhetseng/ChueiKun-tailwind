@@ -3,7 +3,10 @@
     <div class="bg-bgword bg-no-repeat bg-[center_top_-40px] pt-10">
         <div class="container">
             <btn_breadcrumb />
-            <btn_pageTitle class="mb-9" />
+            <div class="mb-9">
+                <h2 class="text-4xl text-Mred font-bold">關於垂坤</h2>
+                <p>ABOUT US</p>
+            </div>
             <div class="flex flex-col border-b items-center border-gray mb-16 gap-5 pb-26 lg:flex-row lg:pb-28">
                 <div class="lg:w-1/2 w-full">
                     <h3 class="text-2xl font-bold mb-4">細火慢燉，精心烘培</h3>
@@ -20,15 +23,12 @@
                         alt="">
                 </div>
             </div>
-            <button
-                class="block m-auto bg-Mred text-white px-14 py-4 rounded-tr-2xl rounded-bl-2xl mb-20 shadow-mYellow transition-all hover:scale-105 active:scale-100"
-                type="button">返回上一頁</button>
+            <button class="block m-auto mb-20 buttonStyle" type="button">返回上一頁</button>
         </div>
     </div>
 </template>
 
 <script setup>
 import btn_banner from '../../components/btn_banner.vue';
-import btn_pageTitle from '../../components/btn_pageTitle.vue';
 import btn_breadcrumb from '../../components/btn_breadcrumb.vue';
 </script>

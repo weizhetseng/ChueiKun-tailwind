@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
+
+
+.buttonStyle {
+    @apply bg-Mred text-white px-14 py-4 rounded-tr-2xl rounded-bl-2xl shadow-mYellow transition-all hover:scale-105 active:scale-100
+}
+
+.buttonStyle2 {
+    @apply bg-white text-Mred px-14 py-4 rounded-tr-2xl rounded-bl-2xl shadow-mYellow transition-all hover:scale-105 active:scale-100
+}
+
+.dateStyle::-webkit-calendar-picker-indicator {
+    background: transparent;
+}

@@ -16,8 +16,6 @@ const router = createRouter({
       component: () => import('../views/About/AboutUs.vue'),
       meta: {
         banner: 'banner-about.jpg',
-        title: '關於垂坤',
-        enTitle: 'ABOUT US',
         breadcrumb: ['關於垂坤']
       }
     },
@@ -27,13 +25,11 @@ const router = createRouter({
       component: () => import('../views/News/NewsView.vue'),
       meta: {
         banner: 'banner-news.jpg',
-        title: '最新消息',
-        enTitle: 'HOT NEWS',
         breadcrumb: ['最新消息']
       },
       children: [
         {
-          path: 'newsDetail',
+          path: 'newsDetail/:id',
           component: () => import('../views/News/NewsDetail.vue'),
         }
       ]
@@ -44,9 +40,35 @@ const router = createRouter({
       component: () => import('../views/Location/Location.vue'),
       meta: {
         banner: 'banner-location.jpg',
-        title: '營業據點',
-        enTitle: 'Business base',
         breadcrumb: ['營業據點']
+      }
+    }
+    ,
+    {
+      path: '/login',
+      name: 'login',
+      component: () => import('../views/Member/Login.vue'),
+      meta: {
+        banner: 'banner-login.jpg',
+        breadcrumb: ['會員登入']
+      }
+    },
+    {
+      path: '/forget',
+      name: 'forget',
+      component: () => import('../views/Member/Forget.vue'),
+      meta: {
+        banner: 'banner-login.jpg',
+        breadcrumb: ['會員專區', '忘記密碼']
+      }
+    },
+    {
+      path: '/register',
+      name: 'register',
+      component: () => import('../views/Member/Register.vue'),
+      meta: {
+        banner: 'banner-login.jpg',
+        breadcrumb: ['會員註冊']
       }
     }
   ]
