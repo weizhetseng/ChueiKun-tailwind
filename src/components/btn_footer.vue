@@ -46,11 +46,11 @@ const pageLink = [
         title: "營業據點",
     },
     {
-        url: "/login",
+        url: "",
         title: "會員專區",
     },
     {
-        url: "/product",
+        url: "",
         title: "線上購物",
     },
     {

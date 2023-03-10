@@ -17,7 +17,8 @@ module.exports = {
         Mred: '#A02C2C',
         Myellow: '#F7EEDD',
         gold: '#b4a27f',
-        gray: '#707070'
+        gray: '#707070',
+        wrap: 'rgba(0, 0, 0, 0.5)'
       },
       backgroundImage: {
         logo1: "url('/src/assets/image/logo/logo01.png')",
