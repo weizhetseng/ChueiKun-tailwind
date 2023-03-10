@@ -11,7 +11,7 @@
                 <div class="gap-5 m-auto mb-16 sm:flex lg:w-1/2">
                     <label class="w-full p-2 flex items-center gap-1 sm:w-32 sm:border-r sm:border-gray" for="user">
                         <div class="border border-Mred rounded-full p-2">
-                            <img src="../../assets/image/other/envelope-solid (2).png" alt="">
+                            <img src="../../assets/image/other/envelope-solid.png" alt="">
                         </div>
                         帳號
                     </label>
