@@ -8,10 +8,9 @@
 
 <script setup>
 import { onMounted, ref } from 'vue';
-import btn_homeModal from '../components/btn_homeModal.vue';
+import btn_homeModal from '../../components/btn_homeModal.vue';
 
 const homeModal = ref(null)
-console.log(homeModal)
 
 onMounted(() => {
     homeModal.value.openModal()

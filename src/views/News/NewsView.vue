@@ -34,11 +34,11 @@
 </template>
 
 <script setup>
-import btn_banner from '../components/btn_banner.vue';
-import btn_breadcrumb from '../components/btn_breadcrumb.vue';
-import btn_pageTitle from '../components/btn_pageTitle.vue';
-import btn_newsList from '../components/btn_newsList.vue';
-import btn_pagination from '../components/btn_pagination.vue'
+import btn_banner from '../../components/btn_banner.vue';
+import btn_breadcrumb from '../../components/btn_breadcrumb.vue';
+import btn_pageTitle from '../../components/btn_pageTitle.vue';
+import btn_newsList from '../../components/btn_newsList.vue';
+import btn_pagination from '../../components/btn_pagination.vue'
 
 const newsList = [
     {

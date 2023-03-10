@@ -64,9 +64,9 @@
 </template>
 
 <script setup>
-import btn_banner from '../components/btn_banner.vue';
-import btn_pageTitle from '../components/btn_pageTitle.vue';
-import btn_breadcrumb from '../components/btn_breadcrumb.vue';
+import btn_banner from '../../components/btn_banner.vue';
+import btn_pageTitle from '../../components/btn_pageTitle.vue';
+import btn_breadcrumb from '../../components/btn_breadcrumb.vue';
 
 const locationList = [
     {

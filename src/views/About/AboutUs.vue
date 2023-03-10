@@ -15,8 +15,8 @@
                         及品質上，都絕對能為您帶來最合乎實質的效益，加上垂坤肉鬆近幾年來累積的專業經驗，及 因應目前市場上的需求，一直不斷的求新求變，就是為了滿足客戶的各式需求，讓垂坤肉鬆能 提供客戶最優質的服務。</p>
                 </div>
                 <div class="lg:w-1/2 relative w-full">
-                    <img class="w-full rounded-3xl" src="../assets/image/about/about02.jpg" alt="">
-                    <img class="w-1/2 rounded-3xl absolute top-1/2 left-[10%]" src="../assets/image/about/about01.jpg"
+                    <img class="w-full rounded-3xl" src="../../assets/image/about/about02.jpg" alt="">
+                    <img class="w-1/2 rounded-3xl absolute top-1/2 left-[10%]" src="../../assets/image/about/about01.jpg"
                         alt="">
                 </div>
             </div>
@@ -28,7 +28,7 @@
 </template>
 
 <script setup>
-import btn_banner from '../components/btn_banner.vue';
-import btn_pageTitle from '../components/btn_pageTitle.vue';
-import btn_breadcrumb from '../components/btn_breadcrumb.vue';
+import btn_banner from '../../components/btn_banner.vue';
+import btn_pageTitle from '../../components/btn_pageTitle.vue';
+import btn_breadcrumb from '../../components/btn_breadcrumb.vue';
 </script>

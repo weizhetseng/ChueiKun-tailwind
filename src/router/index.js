@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import HomeView from '../views/Home/HomeView.vue'
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,8 +13,9 @@ const router = createRouter({
     {
       path: '/about',
       name: 'about',
-      component: () => import('../views/AboutUs.vue'),
+      component: () => import('../views/About/AboutUs.vue'),
       meta: {
+        banner: 'banner-about.jpg',
         title: '關於垂坤',
         enTitle: 'ABOUT US',
         breadcrumb: ['關於垂坤']
@@ -22,18 +24,26 @@ const router = createRouter({
     {
       path: '/news',
       name: 'news',
-      component: () => import('../views/NewsView.vue'),
+      component: () => import('../views/News/NewsView.vue'),
       meta: {
+        banner: 'banner-news.jpg',
         title: '最新消息',
         enTitle: 'HOT NEWS',
         breadcrumb: ['最新消息']
-      }
+      },
+      children: [
+        {
+          path: 'newsDetail',
+          component: () => import('../views/News/NewsDetail.vue'),
+        }
+      ]
     },
     {
       path: '/location',
       name: 'location',
-      component: () => import('../views/Location.vue'),
+      component: () => import('../views/Location/Location.vue'),
       meta: {
+        banner: 'banner-location.jpg',
         title: '營業據點',
         enTitle: 'Business base',
         breadcrumb: ['營業據點']
