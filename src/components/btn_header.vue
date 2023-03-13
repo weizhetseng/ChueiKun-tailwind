@@ -30,15 +30,18 @@
                 <img src="../assets/image/other/user-alert.png" alt="">
                 詐騙手法大公開
             </li>
-            <li
-                class="w-20 h-20 bg-gold text-white flex flex-col gap-1 items-center justify-center text-center leading-none">
-                <img src="../assets/image/other/cart.png" alt="">
-                購物車
+            <li>
+                <RouterLink
+                    class="w-20 h-20 bg-gold text-white flex flex-col gap-1 items-center justify-center text-center leading-none"
+                    to="">
+                    <img src="../assets/image/other/cart.png" alt="">
+                    購物車
+                </RouterLink>
             </li>
-            <li
-                class="w-20 h-20 bg-Mred text-white flex flex-col gap-1 items-center justify-center text-center leading-none">
-                <img src="../assets/image/other/user.png" alt="">
-                <RouterLink to="/login">會員專區</RouterLink>
+            <li>
+                <RouterLink
+                    class="w-20 h-20 bg-Mred text-white flex flex-col gap-1 items-center justify-center text-center leading-none"
+                    to="/login"><img src="../assets/image/other/user.png" alt="">會員專區</RouterLink>
             </li>
         </ul>
     </nav>

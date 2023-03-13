@@ -49,21 +49,22 @@
                     <!-- 其他方式登入 -->
                     <div class="p-5 text-center">
                         <div
-                            class="relative mb-10 after:absolute after:content-[''] after:w-full after:h-px after:bg-lgray after:top-1/2 after:left-1/2 after:-translate-y-1/2 after:-translate-x-1/2">
+                            class="relative mb-10 after:absolute after:content-[''] after:w-4/5 after:h-px after:bg-lgray after:top-1/2 after:left-1/2 after:-translate-y-1/2 after:-translate-x-1/2">
                             <p
                                 class="inline-block relative z-10 px-5 py-2 rounded-tr-3xl rounded-bl-3xl shadow-mYellow bg-Mred text-white">
                                 其他方式登入</p>
                         </div>
                         <div class="flex items-center justify-center gap-5">
-                            <a class="flex items-center justify-center border border-Mred p-5 rounded-full" href="#">
+                            <div class="flex items-center justify-center border border-Mred p-5 rounded-full">
                                 <img src="../../assets/image/other/facebook.png" alt="">
-                            </a>
-                            <a class="flex items-center justify-center border border-Mred p-5 rounded-full" href="#">
+                            </div>
+                            <div class="flex items-center justify-center border border-Mred p-5 rounded-full">
                                 <img src="../../assets/image/other/google.png" alt="">
-                            </a>
-                            <a class="flex items-center justify-center border border-Mred p-5 rounded-full" href="#">
+                            </div>
+                            <div class="flex items-center justify-center border border-Mred p-5 rounded-full"
+                                @click="lineLogin.lineLoginBtn()">
                                 <img src="../../assets/image/other/line.png" alt="">
-                            </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -166,6 +167,11 @@
 </template>
 
 <script setup>
+import { onMounted } from 'vue';
 import btn_banner from '../../components/btn_banner.vue';
 import btn_breadcrumb from '../../components/btn_breadcrumb.vue';
+import { uselineLogin } from '../../stores/counter';
+
+const lineLogin = uselineLogin()
+
 </script>
