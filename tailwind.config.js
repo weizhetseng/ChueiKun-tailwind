@@ -22,7 +22,8 @@ module.exports = {
         gold: '#b4a27f',
         gray: '#707070',
         lgray: '#999999',
-        wrap: 'rgba(0, 0, 0, 0.5)'
+        wrap: 'rgba(0, 0, 0, 0.5)',
+        Btable: 'rgba(0, 0, 0, 0.2)',
       },
       backgroundImage: {
         logo1: "url('/src/assets/image/logo/logo01.png')",
@@ -39,6 +40,9 @@ module.exports = {
         'mYellow': '2px 2px 0px 2px #F6EEDD',
         'main': '0px 3px 6px rgba(0, 0, 0, 0.16)'
       },
+      gridTemplateColumns: {
+        '16': 'repeat(16, minmax(0, 1fr))',
+      }
     },
   },
   plugins: []

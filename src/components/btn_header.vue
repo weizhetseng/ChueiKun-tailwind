@@ -25,7 +25,7 @@
             <li>訂單下載</li>
         </ul>
         <ul class="lg:flex hidden">
-            <li class="w-20 h-20 p-1 bg-black text-white flex flex-col gap-1 items-center justify-center text-center leading-none"
+            <li class="w-20 h-20 p-1 bg-black cursor-pointer text-white flex flex-col gap-1 items-center justify-center text-center leading-none"
                 @click="scamModal.openModal()">
                 <img src="../assets/image/other/user-alert.png" alt="">
                 詐騙手法大公開

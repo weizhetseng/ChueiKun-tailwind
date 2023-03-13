@@ -41,7 +41,10 @@
                             </div>
                             <RouterLink to="/forget">忘記密碼</RouterLink>
                         </div>
-                        <button class="block m-auto buttonStyle" type="submit">登入</button>
+                        <!-- <button class="block m-auto buttonStyle" type="submit">登入</button> -->
+                        <div class="text-center">
+                            <RouterLink to="/memberCenter" class="inline-block buttonStyle" type="submit">登入</RouterLink>
+                        </div>
                     </form>
                     <!-- 其他方式登入 -->
                     <div class="p-5 text-center">

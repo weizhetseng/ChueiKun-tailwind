@@ -42,8 +42,7 @@ const router = createRouter({
         banner: 'banner-location.jpg',
         breadcrumb: ['營業據點']
       }
-    }
-    ,
+    },
     {
       path: '/login',
       name: 'login',
@@ -70,7 +69,69 @@ const router = createRouter({
         banner: 'banner-login.jpg',
         breadcrumb: ['會員註冊']
       }
-    }
+    },
+    {
+      path: '/memberCenter',
+      name: 'memberCenter',
+      component: () => import('../views/Member/MemberCenter.vue'),
+      meta: {
+        banner: 'banner-member.jpg',
+        breadcrumb: ['會員專區']
+      },
+      children: [
+        {
+          path: 'orderSearch',
+          component: () => import('../views/Member/OrderSearch.vue'),
+          meta: {
+            banner: 'banner-member.jpg',
+            breadcrumb: ['會員專區', '查詢訂單資料']
+          },
+          children: [
+            {
+              path: 'orderDetail/:id',
+              component: () => import('../views/Member/OrderDetail.vue'),
+              meta: {
+                banner: 'banner-member.jpg',
+                breadcrumb: ['會員專區', '查詢訂單資料']
+              },
+            }
+          ]
+        },
+        {
+          path: 'updateUser',
+          component: () => import('../views/Member/UpdateUser.vue'),
+          meta: {
+            banner: 'banner-member.jpg',
+            breadcrumb: ['會員專區', '修改會員資料']
+          },
+        },
+        {
+          path: 'changePW',
+          component: () => import('../views/Member/ChangePW.vue'),
+          meta: {
+            banner: 'banner-member.jpg',
+            breadcrumb: ['會員專區', '變更密碼']
+          },
+        },
+        {
+          path: 'bindOther',
+          component: () => import('../views/Member/BindOther.vue'),
+          meta: {
+            banner: 'banner-member.jpg',
+            breadcrumb: ['會員專區', '綁定其他帳號']
+          },
+        },
+        {
+          path: 'logout',
+          component: () => import('../views/Member/Logout.vue'),
+          meta: {
+            banner: 'banner-member.jpg',
+            breadcrumb: ['會員專區', '登出']
+          },
+        }
+      ]
+    },
+
   ]
 })
 
